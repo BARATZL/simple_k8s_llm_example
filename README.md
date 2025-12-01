@@ -29,9 +29,9 @@ I deployed this project on Cloud Shell. Once these files all exist in your Cloud
 5. kubectl create secret generic huggingface-token     --from-literal=token='YOUR TOKEN HERE'
 
 6. Ensure you are in the project folder on cloud shell first!
-   docker build -t us-central1-docker.pkg.dev/baratz00-is843-spring25/llm-app-repo/flight-analysis-local:v1 .
+   docker build -t us-central1-docker.pkg.dev/PROJECT_ID_HERE/llm-app-repo/flight-analysis-local:v1 .
 
-7. docker push us-central1-docker.pkg.dev/baratz00-is843-spring25/llm-app-repo/flight-analysis-local:v1 .
+7. docker push us-central1-docker.pkg.dev/PROJECT_ID_HERE/llm-app-repo/flight-analysis-local:v1 .
 
 8. gcloud iam service-accounts create flight-analysis-sa     --display-name="Flight Analysis Service Account"
 
